@@ -171,12 +171,6 @@ namespace CSharpStackLayer
         /// <returns>見つかった葉ノード</returns>
         public TreeNode<T> FindFirstLeaf() => FindFirst( x => x.IsLeaf );
 
-        public void InsertChild( int index, TreeNode<T> node )
-        {
-            Children.Insert( index, node );
-            node.Parent = this;
-        }
-
         /// <summary>
         /// 指定条件を充たす最後のノードを見つけます.
         /// </summary>
@@ -190,6 +184,17 @@ namespace CSharpStackLayer
         /// </summary>
         /// <returns>見つかった葉ノード</returns>
         public TreeNode<T> FindLastLeaf() => FindLast( x => x.IsLeaf );
+
+        /// <summary>
+        /// ノードを子として指定インデックスに追加します.
+        /// </summary>
+        /// <param name="index">インデックス</param>
+        /// <param name="node">ノード</param>
+        public void InsertChild( int index, TreeNode<T> node )
+        {
+            Children.Insert( index, node );
+            node.Parent = this;
+        }
 
         /// <summary>
         /// ノード列を子として指定インデックスに追加します.

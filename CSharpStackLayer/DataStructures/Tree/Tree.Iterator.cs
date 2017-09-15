@@ -117,20 +117,14 @@
             /// </summary>
             /// <param name="itr">起点とするTreeIterator</param>
             /// <returns>1つ次のTreeIterator</returns>
-            public static TreeIterator operator ++( TreeIterator itr )
-            {
-                return Next( itr );
-            }
+            public static TreeIterator operator ++( TreeIterator itr ) => Next( itr );
 
             /// <summary>
             /// -- 演算子のオーバーロード
             /// </summary>
             /// <param name="itr">起点とするTreeIterator</param>
             /// <returns>1つ前のTreeIterator</returns>
-            public static TreeIterator operator --( TreeIterator itr )
-            {
-                return Prev( itr );
-            }
+            public static TreeIterator operator --( TreeIterator itr ) => Prev( itr );
 
             /// <summary>
             /// 現在のノードの値を取得します.

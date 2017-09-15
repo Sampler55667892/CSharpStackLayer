@@ -8,10 +8,12 @@ namespace CSharpStackLayer
     /// <typeparam name="T">ノードに保持するオブジェクトの型</typeparam>
     public partial class Tree<T>
     {
+        TreeNode<T> root = new TreeNode<T>();
+
         /// <summary>
         /// ルートノード
         /// </summary>
-        public TreeNode<T> Root { get; } = new TreeNode<T>();
+        public TreeNode<T> Root => root;
 
         /// <summary>
         /// ノード数
@@ -24,5 +26,24 @@ namespace CSharpStackLayer
         /// </summary>
         /// <returns>ノード列</returns>
         public IEnumerable<TreeNode<T>> Enumerate() => Root.Enumerate();
+
+        /// <summary>
+        /// ルートノードを設定します.
+        /// </summary>
+        /// <param name="root">ノード</param>
+        internal void SetRoot( TreeNode<T> root )
+        {
+            if (this.root != null) {
+                this.root.Item = default(T);
+                this.root = null;
+            }
+
+            this.root = root;
+        }
+
+        // TODO:
+        //public Tree<T> ShallowCopy()
+        //{
+        //}
     }
 }

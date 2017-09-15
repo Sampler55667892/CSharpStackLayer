@@ -35,6 +35,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChainingAssertion, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ChainingAssertion.Bin.1.8.0.0\lib\net45\ChainingAssertion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -52,20 +57,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DataStructures\Tree\TreeIteratorTest.cs" />
+    <Compile Include="DataStructures\Tree\TreeNodeTest.cs" />
     <Compile Include="DataStructures\Tree\TreeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSharpSandbox\CSharpSandbox.csproj">
-      <Project>{385e20e3-8956-4e82-9edd-04fca06e48c6}</Project>
-      <Name>CSharpSandbox</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CSharpStackLayer\CSharpStackLayer.csproj">
       <Project>{85fb5b1c-dd25-44cb-95f8-f38c0eaa00ac}</Project>
       <Name>CSharpStackLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

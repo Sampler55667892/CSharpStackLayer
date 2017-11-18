@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataStructures\Mapper\Mapper.cs" />
+    <Compile Include="Mapper\Mapper.cs" />
     <Compile Include="DataStructures\Tree\Tree.Iterator.cs" />
     <Compile Include="DataStructures\Tree\Tree.cs" />
     <Compile Include="DataStructures\Tree\TreeNode.cs" />

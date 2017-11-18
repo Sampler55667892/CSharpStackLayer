@@ -60,7 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DataStructures\Mapper\MapperTest.cs" />
+    <Compile Include="Mapper\MapperTest.cs" />
     <Compile Include="DataStructures\Tree\TreeIteratorTest.cs" />
     <Compile Include="DataStructures\Tree\TreeNodeTest.cs" />
     <Compile Include="DataStructures\Tree\TreeTest.cs" />

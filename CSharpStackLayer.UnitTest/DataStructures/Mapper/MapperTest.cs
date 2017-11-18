@@ -35,7 +35,7 @@ namespace CSharpStackLayer.UnitTest.DataStructures
 
         class BServiceDomain : TestDomain
         {
-            // ユーザのサービス利用履歴に応じた商品メッセージ
+            // 商品メッセージ (ユーザのサービス利用履歴に応じて変動するイメージ)
             public string CommercialMessage;
         }
 

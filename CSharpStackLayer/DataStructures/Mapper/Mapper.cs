@@ -37,7 +37,7 @@ namespace CSharpStackLayer
         // Reflection を使ってマップ可能な箇所はマップする
         // 次の2つが一致する場合に値をコピーする
         // 　(1) 名称 (小文字・大文字の区別なし)
-        //   (2) 型 (ほぼ完全一致)
+        // 　(2) 型 (完全一致)
         Out applyDefaultMap<In, Out>( In input )
             where In: Domain
             where Out: Codomain

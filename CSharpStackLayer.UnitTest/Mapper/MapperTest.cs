@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CSharpStackLayer.UnitTest.DataStructures
+namespace CSharpStackLayer.UnitTest.Mapper
 {
     [TestClass]
     public class MapperTest

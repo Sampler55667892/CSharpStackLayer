@@ -60,6 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Services\ContainerService\ContainerServiceTest.cs" />
     <Compile Include="Mapper\MapperTest.cs" />
     <Compile Include="DataStructures\Tree\TreeIteratorTest.cs" />
     <Compile Include="DataStructures\Tree\TreeNodeTest.cs" />
@@ -77,6 +78,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
